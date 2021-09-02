@@ -2,7 +2,6 @@ from sys import stdin
 
 num = stdin.readline() # 여러 줄의 입력을 받아야 할 떄 input보다 stdin이 더 효율적
 
-
 for _ in range(int(num)):
     N,M = map(int,stdin.readline().split())
     my_list = list(map(int, stdin.readline().split())) # 덱으로 선언하면 map 사용 불가
@@ -11,6 +10,7 @@ for _ in range(int(num)):
   
     idx = 0 # 나가는 순서
     while True:
+        
         if my_list[0] == max(my_list):
             idx += 1 # 빠져나갈 때만 +1
             if goal[0] == 'goal':
