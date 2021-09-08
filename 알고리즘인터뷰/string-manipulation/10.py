@@ -8,9 +8,14 @@ s = input()
 def parition(s):
     s.sort(reverse=True)
     sum = 0
+    pair = []
 
-    for i in range(len(s)//2):
-        sum += s[(2*i)+1]
+    for i in s:
+        pair.append(i)
+        if len(pair) == 2:
+            sum += min(pair)
+            pair[]
+
     print(sum)
 
 

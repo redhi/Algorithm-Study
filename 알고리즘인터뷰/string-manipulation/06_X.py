@@ -61,14 +61,17 @@ class Solution:
         return False
 
 
-def isPalindrome(mystr):
-    def expand(left, right):
-        while left >= 0 and right < len(mystr) and mystr[left] == mystr[right]:
-            left -= 1
-            right += 1
-        return mystr[left+1:right]
+def expand(mystr, left, right):
+    while left >= 0 and right < len(mystr) and mystr[left] == mystr[right]:
+        left -= 1
+        right += 1
+    return mystr[left+1:right]
     if len(mystr) < 2 or mystr == mystr[::-1]:
         return mystr
 
 
-isPalindrome("")
+s = "cbbdbd"
+result = ""
+for i in range(len(s)-1):
+    result = max(result, expand(s, i, i+1), expand(s, i, i+2), key=len)
+print(result)

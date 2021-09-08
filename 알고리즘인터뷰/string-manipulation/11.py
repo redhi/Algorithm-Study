@@ -5,6 +5,8 @@ import collections
 
 s = input()
 
+# 시간 초과
+
 
 def product(nums):
     new_s = nums[:]
