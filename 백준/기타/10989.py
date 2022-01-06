@@ -3,17 +3,17 @@
 시간 제한 5초
 메모리 제한 8MB -> 메모리 초과
 """
-import heapq
 import sys
 
 input = sys.stdin.readline
 
 N = int(input())
-
-heap = []
+my_list = [0] * 10001
 
 for i in range(N):
-    heapq.heappush(heap, int(input()))
+    my_list[int(input())] += 1
 
-while not len(heap) == 0:
-    print(heapq.heappop(heap))
+for i in range(10001):
+    if not my_list[i] == 0:
+        for j in range(my_list[i]):
+            print(i)
