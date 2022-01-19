@@ -5,12 +5,12 @@
 N = int(input())
 
 
-six = 666
+num = 666
 count = 0
 while True:
-    if "666" in str(six):
+    if "666" in str(num):
         count += 1
-    if count == n:
-        print(six)
+    if count == N:
+        print(num)
         break
-    six += 1
+    num += 1
