@@ -38,4 +38,4 @@ for i in range(T):
     d_list = deque(map(int, input().split()))
     answer.append(str(print_queue(d_list, N, M)))
 
-sys.stdin.write("\n".join(answer))
+sys.stdout.write("\n".join(answer))
