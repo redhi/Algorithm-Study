@@ -35,15 +35,12 @@ def sol(s):
                 answer.append("+")
             answer.append("(")
             stack.append([s[i], i])
-        # print(stack)
-        # print(answer)
 
     if stack:
         return 0
     if answer[-1] == "+":
         answer = answer[:-1]
     answer = "".join(answer)
-    # print(answer)
 
     answer = eval(answer)
     return answer
