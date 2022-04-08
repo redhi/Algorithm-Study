@@ -1,6 +1,3 @@
-from audioop import reverse
-
-
 def solution(nodeinfo):
     answer = [[]]
     for i in range(len(nodeinfo)):
@@ -31,10 +28,8 @@ def solution(nodeinfo):
                     minus_value2 = nodeinfo[i][1] - nodeinfo[j][1]
                     print(nodeinfo[i][1], nodeinfo[j][1])
                     if minus_value != minus_value2:
-                        print(i, j, "나옴")
                         break
 
-                print("으아", nodeinfo[j][2], nodeinfo[i][2])
                 if nodeinfo[j][0] < nodeinfo[i][0]:
                     tree_info[1] = nodeinfo[j][2]
                 else:
