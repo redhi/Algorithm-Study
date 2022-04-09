@@ -22,11 +22,8 @@ def union(a, b):
     # value, a, b = graph[i]
     p_a = find(a)
     p_b = find(b)
-    if p_a < p_b:
-        parent[p_b] = p_a
-
-    else:
-        parent[p_a] = p_b
+    if p_a != p_b:
+        parent[p_b] == p_a
 
 
 def find(node):

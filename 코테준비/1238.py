@@ -31,6 +31,7 @@ def di(start):
                 d[next] = next_w
                 heapq.heappush(heap, [next_w, next])
     print(d)
+
     # for i in range(len(graph[node])):
     #     heapq.heappush(heap, [graph[node][0], graph[node][1]])
     #     d[graph[node][1]] = graph[node][0]
@@ -39,3 +40,4 @@ def di(start):
 for i in range(1, N + 1):
     di(i)
 di(1)
+1

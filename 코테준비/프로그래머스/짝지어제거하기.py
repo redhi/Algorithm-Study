@@ -16,3 +16,6 @@ def solution(s):
     else:
         answer = 0
     return answer
+
+a = []
+a.index()

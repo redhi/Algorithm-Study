@@ -112,6 +112,7 @@ def solution(name):
 # 0 4 5
 # J+1+1+N+1+J
 name = "ABAAAAABB"
+
 solution(name)
 # 3 7 -1 -4
 # 4
