@@ -26,3 +26,4 @@ result_list.append(max(nature_list) - min(nature_list))
 
 for i in range(len(result_list)):
     print(result_list[i])
+
