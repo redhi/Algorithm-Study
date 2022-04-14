@@ -21,8 +21,9 @@ print(backpack)
 a = [0]
 print(dp)
 visit = [0] * (n)
-for i in range(1,n+1):
-    dp[i] = 
+# for i in range(1,k+1):
+#     for j in range(1,i):
+#         dp[i] =
 
 max_num = 0
 
