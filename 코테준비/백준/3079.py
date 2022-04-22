@@ -1,3 +1,13 @@
+import sys
+
+input = sys.stdin.readline
+
+n, m = map(int, input().split())
+times = []
+for i in range(n):
+    times.append(int(input()))
+
+
 def solution(n, times):
     answer = 0
     left = 0
@@ -20,7 +30,4 @@ def solution(n, times):
     return answer
 
 
-n = 6
-times = [7, 10]
-
-print(solution(n, times))
+print(solution(m, times))
