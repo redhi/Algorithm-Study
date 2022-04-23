@@ -23,7 +23,7 @@ def union(a, b):
     p_a = find(a)
     p_b = find(b)
     if p_a != p_b:
-        parent[p_b] == p_a
+        parent[p_b] = p_a
 
 
 def find(node):
