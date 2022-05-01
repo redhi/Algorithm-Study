@@ -28,7 +28,7 @@ name = "JAN"
 name = "JAANAABAA"
 name = "BAAABAAAAAAAAAAAAAAAAAB"
 name = "ABAAB"
-2 + 5 - 4
+# 2 + 5 - 4
 # 16+N
 # 9+13+13
 # 26+9 = 35
