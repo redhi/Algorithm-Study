@@ -36,10 +36,9 @@ def solution(info, edges):
             globals()["node{}".format(i)].right = globals()["node{}".format(j)]
         else:
             globals()["node{}".format(i)].left = globals()["node{}".format(j)]
-    print("높이", tree.height(tree.root))
-    print("중위")
+
     tree.inorder(tree.root)
-    print("잉")
+
     return answer
 
 
