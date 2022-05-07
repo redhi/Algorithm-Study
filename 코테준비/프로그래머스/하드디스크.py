@@ -8,7 +8,7 @@ def solution(jobs):
         start, spent = job
         job_list.append([start, spent, start + spent])
     # print(job_list)
-    job_list.sort(key=lambda x: (x[2], x[0]))
+    job_list.sort(key=lambda x: (x[1], x[0]))
     # print(job_list)
     job_list = deque(job_list)
     now = 0

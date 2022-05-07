@@ -26,6 +26,7 @@ def solution(n, s, a, b, fares):
         graph[e].append([f, ss])
 
     col = [s, a, b]
+
     d = [[INF] * (n + 1), [INF] * (n + 1), [INF] * (n + 1)]
     for i in range(3):
         kru(graph, col[i], d[i])
