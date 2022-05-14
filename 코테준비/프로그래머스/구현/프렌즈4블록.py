@@ -40,7 +40,7 @@ def solution(m, n, board):
             r_str = (m - len(r_str)) * "0" + r_str
             for k in range(len(r_str)):
                 new[k][j] = r_str[k]
-
+        print(new)
         if len(pass_list) == 0:
             answer = count
             break
