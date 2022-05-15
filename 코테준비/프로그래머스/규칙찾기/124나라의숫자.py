@@ -25,7 +25,3 @@ def solution(n):
 n = 35
 
 print(solution(n))
-# 1 2 4
-# 11 12 14
-# 21 22 24
-#
