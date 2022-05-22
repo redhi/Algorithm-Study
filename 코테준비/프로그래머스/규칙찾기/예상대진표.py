@@ -35,11 +35,6 @@ def solution(n, a, b):
     return answer
 
 
-# 4 5 6
-# 5
-
-
-# 6364 32
 n = 8
 a = 4
 b = 5
