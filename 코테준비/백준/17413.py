@@ -4,9 +4,8 @@ import sys
 
 input = sys.stdin.readline
 words = input().rstrip()
-print(words)
 words = words.split(">")
-print(words)
+
 word_str = ""
 for word in words:
     if word:
@@ -15,9 +14,17 @@ for word in words:
         else:
             if word.count("<") > 0:
                 a, b = word.split("<")
-                word_str += a[::-1]
+                a_list = a.split()
+                for idx, aa in enumerate(a_list):
+                    word_str += aa[::-1]
+                    if idx != len(a_list) - 1:
+                        word_str += " "
                 word_str += "<" + b + ">"
             else:
-                word_str += word[::-1]
-    print(word_str)
-# .replace("<", ",").replace(">", ",")
+                a_list = word.split()
+                for idx, aa in enumerate(a_list):
+                    word_str += aa[::-1]
+                    if idx != len(a_list) - 1:
+                        word_str += " "
+
+print(word_str)
