@@ -5,30 +5,10 @@ input = sys.stdin.readline
 
 N = int(input())
 
-pay_list = list(map(int, input().split()))
-pay = []
-for i in range(len(pay_list)):
-    pay.append([i + 1, pay_list[i]])
+pay_list = [0] + list(map(int, input().split()))
+dp = [0 for i in range(len(pay_list))]
+for i in range(1, N + 1):
+    for j in range(1, i + 1):
+        dp[i] = max(dp[i], pay_list[j] + dp[i - j])
 
-pp = []
-answer = 0
-
-
-def dfs(count):
-    global answer
-    if count >= N:
-        if count == N:
-            answer = max(answer, sum(pp))
-        return
-    count1 = 0
-    for p in pay:
-        idx, money = p
-        pp.append(money)
-        count1 = count + idx
-        dfs(count1)
-        count1 = count - idx
-        pp.pop()
-
-
-dfs(0)
-print(answer)
+print(dp[N])
