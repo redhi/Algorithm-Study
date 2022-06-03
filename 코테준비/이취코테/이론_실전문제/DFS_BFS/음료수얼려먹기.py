@@ -7,12 +7,8 @@ n, m = map(int, input().split())
 arr = [[] for _ in range(n)]
 for i in range(n):
     arr[i].extend(list(map(int, list(input().rstrip()))))
-print(arr)
 que = deque()
 
-# for i in range(n):
-#     for j in range(m):
-#         que.append([i,j])
 
 dire = [[0, -1], [0, 1], [1, 0], [-1, 0]]
 count = 0
@@ -26,7 +22,6 @@ for i in range(n):
                 n_x = x + d[0]
                 n_y = y + d[1]
                 if 0 <= n_x < n and 0 <= n_y < m:
-                    # print(n_x, n_y)
                     if arr[n_x][n_y] == 0:
                         is_in = True
                         arr[n_x][n_y] = 1
