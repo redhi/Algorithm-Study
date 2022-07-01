@@ -1,5 +1,3 @@
-from sqlalchemy import true
-
 
 def solution(n):
     answer = ""
@@ -32,12 +30,4 @@ def dfs(start, n):
 
 dfs(0, 2)
 solution(n)
-# 8진법
-# 01234567
-# 124
-# 124
-# 1 1
-# 2 2
-# 3 4
-# 1 2 4 0 0 0
-# 1 1 1
+
