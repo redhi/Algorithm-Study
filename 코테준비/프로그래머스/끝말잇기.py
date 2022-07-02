@@ -8,9 +8,7 @@ def solution(n, words):
     for i in range(1, len(words)):
         word = list(words[i])
         if words[i] in words[:i]:
-            # print("잉")
             person_count += 1
-            # print(last_word, word[0], word, person_count, person_num)
             break
 
         if last_word == word[0]:
@@ -23,19 +21,15 @@ def solution(n, words):
             person_num += 1
             person_num %= n
             person_count = count // n
-            print(person_count, person_num)
-            # print(word)
+
         elif last_word != word[0]:
-            print(person_count, person_num, count, word)
             break
 
-            print(last_word, word[0], word, person_count, person_num)
     if person_num == 0:
         person_num += 1
     if person_num == -1:
         person_num += 1
     answer = [person_num, person_count + 1]
-    # print(last_word, person_count + 1, count, person_num)
 
     return answer
 
