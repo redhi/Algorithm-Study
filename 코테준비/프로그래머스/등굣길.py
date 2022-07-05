@@ -11,16 +11,7 @@ def solution(m, n, puddles):
     for p in puddles:
         i, j = p[0], p[1]
         town[i - 1][j - 1] = 101
-    # [i][j] -> [i][j+1], [i+1][j]
-    # [0][3] -> [i+1][j] if i < m:
-    # [2][0] -> [i][j+1] if i < n:
-    # 0,1,2 5
-    # 7 3
-    # 1 1 1 1 1 1 1
-    # 1 1 1 1 1 1 1
-    # 1 1 1 1 1 1 1
-    print(town)
-
+  
     for i in range(len(town)):  # i - m
         for j in range(len(town[i])):  # j - n
             # print(i, j)
