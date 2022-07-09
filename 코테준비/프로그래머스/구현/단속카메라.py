@@ -15,7 +15,6 @@ def solution(routes):
         e = r[1]
         for i in range(s, e):
             arr[abs(mi - i)] += 1
-            print(i, abs(mi - i))
 
     answer = len(routes) - max(arr)
 
